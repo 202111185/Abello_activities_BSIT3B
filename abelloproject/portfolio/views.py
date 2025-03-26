@@ -8,3 +8,11 @@ def about(request):
 
 def contact(request):
     return render(request, 'pages/contact.html')
+
+def dashboard(request):
+    data = [
+        {"title": "Users", "count": 150},
+        {"title": "Orders", "count": 320}, 
+        {"title": "Revenue", "count": "₱12,450"}
+    ]
+    return render(request, 'pages/dashboard.html', {'data': data})
