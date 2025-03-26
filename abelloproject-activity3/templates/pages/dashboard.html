@@ -1,0 +1,19 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Dashboard</h1>
+
+<div class="api-docs">
+    <h2>API Documentation</h2>
+    <div class="endpoint">
+        <h3>GET /api/items/</h3>
+        <p>Returns all items</p>
+    </div>
+    <div class="endpoint">
+        <h3>POST /api/items/add/</h3>
+        <p>Add a new item (send JSON data)</p>
+    </div>
+    
+</div>
+{% endblock %}
